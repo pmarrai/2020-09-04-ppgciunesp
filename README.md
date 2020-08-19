@@ -8,8 +8,7 @@ The repostory also contains files of The Carpentries' ([Software Carpentry][swc-
 
 ## More information about PPGCI UNESP
 
-1.  Visit the information page (<https://www.marilia.unesp.br/#!/pos-graduacao/mestrado-e-doutorado/ciencia-da-informacao/english/>),
-    click on the green "Use this template" button (top right)
+Visit the information page (<https://www.marilia.unesp.br/#!/pos-graduacao/mestrado-e-doutorado/ciencia-da-informacao/english/>).
 
 ## Why a Library Carpentry workshop in this Programme
 
