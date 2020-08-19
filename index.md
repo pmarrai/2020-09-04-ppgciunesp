@@ -173,10 +173,7 @@ SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
 {% endcomment %}
-<p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
-</p>
+
 
 {% comment %}
 ACCESSIBILITY
@@ -185,7 +182,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+ 
 {% if online == "false" %}
   We are committed to making this workshop
   accessible to everybody. The workshop organizers have checked that:
@@ -202,9 +199,7 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
+ 
 </p>
 {% endif %}
 
@@ -214,12 +209,12 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Contato:</strong>
+  Por favor, mande um e-mail para
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
-  or
+  ou
   {% else %}
   {% unless forloop.first %}
   ,
@@ -230,29 +225,24 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  para mais informações.
 </p>
 
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
-</p>
 
 <hr/>
 
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">Código de conduta</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Qualquer pessoa que participe das atividades de Carpentries deve estar de acordo com o <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Código de Conducta</a>. Este documento também descreve como relatar um incidente, se necessário. O documento está apenas disponível em inglês.
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Relatar um Incidente do Código de Conduta</button>
   </a>
 </p>
 <hr/>
@@ -275,7 +265,7 @@ available at https://codimd.carpentries.org
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+Utilizaremos este <a href="https://bit.ly/2YgwPxQ">documento colaborativo</a> para conversar, tomar notas e compartilhar URLs e códigos.
 </p>
 <hr/>
 {% endif %}
@@ -284,10 +274,10 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<h2 id="surveys">Questionários</h2>
+<p>Se quiser, complete estes questionários antes e depois do curso para as pesquisas de Carpentries sobre o público dos cursos.</p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Questionário Pre-workshop</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Questionário Post-workshop</a></p>
 
 <hr/>
 
