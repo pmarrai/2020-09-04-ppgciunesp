@@ -87,7 +87,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Informação geral</h2>
 
 {% comment %}
 INTRODUCTION
@@ -151,8 +151,7 @@ address.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Onde?:</strong> Este curso será online, utilizando a ferramenta GMeet como no resto das sessões da disciplina. Os links correspondentes estarão disponíveis no mural do GoogleClassroom.
 </p>
 {% endif %}
 
@@ -163,7 +162,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Quando?:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
