@@ -289,7 +289,7 @@ Show the workshop's schedule.  Edit the items and times in the table
 to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Horário</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
@@ -301,34 +301,9 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 
 <hr/>
 
-{% comment %}
-SYLLABUS
 
-Show what topics will be covered.
 
-1. If your workshop is R rather than Python, remove the comment
-around that section and put a comment around the Python section.
-2. Some workshops will delete SQL.
-3. Please make sure the list of topics is synchronized with what you
-intend to teach.
-4. You may need to move the div's with class="col-md-6" around inside
-the div's with class="row" to balance the multi-column layout.
 
-This is one of the places where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if site.carpentry == "swc" %}
-{% include swc/syllabus.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/syllabus.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/syllabus.html %}
-{% endif %}
-
-<hr/>
 
 {% comment %}
 SETUP
@@ -342,10 +317,10 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Instalações e configurações</h2>
 
 <p>
-  To participate in a
+  Para participar neste curso de
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -353,29 +328,13 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  você precisará ter acesso ao software descrito abaixo.
+  Além disso, você precisará de um navegador web atualizado.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Lista de questões comuns que podem ocorrer durante a instalação:
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Página wiki com possíveis problemas de configuração e soluções.</a>.
 </p>
-
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instrucctions.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
 
 {% comment %}
 These are the installation instructions for the tools used
