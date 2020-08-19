@@ -3,8 +3,8 @@
 
 This repository contains information about the Library Carpentry Workshop that will take place online for graduate students of the Graduate Programme in Information Science (PPGCI) of São Paulo State University (UNESP).
 
-The repostory also contains files of The Carpentries' (Software Carpentry)[https://software-carpentry.org/], (Data Carpentry)[https://datacarpentry.org/], and
-(Library Carpentry)[https://librarycarpentry.org/]'s) template for creating websites for workshops.
+The repostory also contains files of The Carpentries' [Software Carpentry](https://software-carpentry.org/), [Data Carpentry](https://datacarpentry.org/), and
+[Library Carpentry](https://librarycarpentry.org/)'s template for creating websites for workshops.
 
 ## More information about PPGCI UNESP
 
